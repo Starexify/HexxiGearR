@@ -6,5 +6,13 @@
   "item.hexxit_gear.scale_boots": "Scale Boots",
   "item.hexxit_gear.scale_chestguard": "Scale Chestguard",
   "item.hexxit_gear.scale_helmet": "Scale Helmet",
-  "item.hexxit_gear.scale_leggings": "Scale Leggings"
+  "item.hexxit_gear.scale_leggings": "Scale Leggings",
+  "item.hexxit_gear.thief_hood": "Thief Hood",
+  "item.hexxit_gear.thief_trousers": "Thief Trousers",
+  "item.hexxit_gear.thief_tunic": "Thief Tunic",
+  "item.hexxit_gear.thief_turnshoes": "Thief Turnshoes",
+  "item.hexxit_gear.tribal_greaves": "Tribal Greaves",
+  "item.hexxit_gear.tribal_skull": "Tribal Skull",
+  "item.hexxit_gear.tribal_tunic": "Tribal Tunic",
+  "item.hexxit_gear.tribal_warboots": "Tribal Warboots"
 }

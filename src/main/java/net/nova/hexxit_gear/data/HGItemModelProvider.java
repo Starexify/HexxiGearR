@@ -30,5 +30,11 @@ public class HGItemModelProvider extends ItemModelProvider {
         basicItem(HGItems.TRIBAL_TUNIC.get());
         basicItem(HGItems.TRIBAL_GREAVES.get());
         basicItem(HGItems.TRIBAL_WARBOOTS.get());
+
+        // Thief
+        basicItem(HGItems.THIEF_HOOD.get());
+        basicItem(HGItems.THIEF_TUNIC.get());
+        basicItem(HGItems.THIEF_TROUSERS.get());
+        basicItem(HGItems.THIEF_TURNSHOES.get());
     }
 }

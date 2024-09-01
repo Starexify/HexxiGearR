@@ -36,6 +36,12 @@ public class CreativeTab {
                 output.accept(HGItems.TRIBAL_TUNIC);
                 output.accept(HGItems.TRIBAL_GREAVES);
                 output.accept(HGItems.TRIBAL_WARBOOTS);
+
+                // Thief
+                output.accept(HGItems.THIEF_HOOD);
+                output.accept(HGItems.THIEF_TUNIC);
+                output.accept(HGItems.THIEF_TROUSERS);
+                output.accept(HGItems.THIEF_TURNSHOES);
             }).build()
     );
 }

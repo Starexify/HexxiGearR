@@ -47,6 +47,15 @@ public class HGItems {
     public static DeferredItem<Item> TRIBAL_WARBOOTS = ITEMS.register("tribal_warboots", () -> new ArmorItem(HGArmorMaterial.TRIBAL, ArmorItem.Type.BOOTS, new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(29)).fireResistant()));
 
     // Thief
+    public static DeferredItem<Item> THIEF_HOOD = ITEMS.register("thief_hood", () -> new ArmorItem(HGArmorMaterial.THIEF, ArmorItem.Type.HELMET, new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(29)).fireResistant()) {
+        @Override
+        public ResourceLocation getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, ArmorMaterial.Layer layer, boolean innerModel) {
+            return TribalSkullModel.TEXTURE;
+        }
+    });
+    public static DeferredItem<Item> THIEF_TUNIC = ITEMS.register("thief_tunic", () -> new ArmorItem(HGArmorMaterial.THIEF, ArmorItem.Type.CHESTPLATE, new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(29)).fireResistant()));
+    public static DeferredItem<Item> THIEF_TROUSERS = ITEMS.register("thief_trousers", () -> new ArmorItem(HGArmorMaterial.THIEF, ArmorItem.Type.LEGGINGS, new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(29)).fireResistant()));
+    public static DeferredItem<Item> THIEF_TURNSHOES = ITEMS.register("thief_turnshoes", () -> new ArmorItem(HGArmorMaterial.THIEF, ArmorItem.Type.BOOTS, new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(29)).fireResistant()));
 
     // Sage
 }
