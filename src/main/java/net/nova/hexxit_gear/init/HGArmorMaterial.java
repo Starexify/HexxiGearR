@@ -43,6 +43,6 @@ public class HGArmorMaterial {
     }), 18, ARMOR_EQUIP_BONE_BLOCK, () -> Ingredient.of(HGItems.HEXICAL_DIAMOND),
             List.of(new ArmorMaterial.Layer(
                     HexxitGearR.rl("tribal")
-            )), 1F, 0.15F
+            )), 1F, 0F
     ));
 }

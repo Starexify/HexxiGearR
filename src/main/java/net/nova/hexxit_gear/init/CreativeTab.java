@@ -30,6 +30,12 @@ public class CreativeTab {
                 output.accept(HGItems.SCALE_CHESTGUARD);
                 output.accept(HGItems.SCALE_LEGGINGS);
                 output.accept(HGItems.SCALE_BOOTS);
+
+                // Tribal
+                output.accept(HGItems.TRIBAL_SKULL);
+                output.accept(HGItems.TRIBAL_TUNIC);
+                output.accept(HGItems.TRIBAL_GREAVES);
+                output.accept(HGItems.TRIBAL_WARBOOTS);
             }).build()
     );
 }
