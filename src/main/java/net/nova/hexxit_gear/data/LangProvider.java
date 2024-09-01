@@ -24,6 +24,11 @@ public class LangProvider extends LanguageProvider {
         addItem(HGItems.SCALE_LEGGINGS, "Scale Leggings");
         addItem(HGItems.SCALE_BOOTS, "Scale Boots");
 
+        addItem(HGItems.TRIBAL_SKULL, "Tribal Skull");
+        addItem(HGItems.TRIBAL_TUNIC, "Tribal Tunic");
+        addItem(HGItems.TRIBAL_GREAVES, "Tribal Greaves");
+        addItem(HGItems.TRIBAL_WARBOOTS, "Tribal Warboots");
+
         // Creative Tab
         add(CreativeTab.HEXXIT_GEAR_TAB_TITLE, "Hexxit Gear R");
     }

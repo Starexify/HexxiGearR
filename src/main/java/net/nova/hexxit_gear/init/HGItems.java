@@ -11,6 +11,7 @@ import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.nova.hexxit_gear.HexxitGearR;
 import net.nova.hexxit_gear.client.model.ScaleHelmetModel;
+import net.nova.hexxit_gear.client.model.TribalSkullModel;
 import org.jetbrains.annotations.Nullable;
 
 import static net.nova.hexxit_gear.HexxitGearR.MODID;
@@ -35,6 +36,15 @@ public class HGItems {
     public static DeferredItem<Item> SCALE_BOOTS = ITEMS.register("scale_boots", () -> new ArmorItem(HGArmorMaterial.SCALE, ArmorItem.Type.BOOTS, new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(29)).fireResistant()));
 
     // Tribal
+    public static DeferredItem<Item> TRIBAL_SKULL = ITEMS.register("tribal_skull", () -> new ArmorItem(HGArmorMaterial.TRIBAL, ArmorItem.Type.HELMET, new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(29)).fireResistant()) {
+        @Override
+        public ResourceLocation getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, ArmorMaterial.Layer layer, boolean innerModel) {
+            return TribalSkullModel.TEXTURE;
+        }
+    });
+    public static DeferredItem<Item> TRIBAL_TUNIC = ITEMS.register("tribal_tunic", () -> new ArmorItem(HGArmorMaterial.TRIBAL, ArmorItem.Type.CHESTPLATE, new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(29)).fireResistant()));
+    public static DeferredItem<Item> TRIBAL_GREAVES = ITEMS.register("tribal_greaves", () -> new ArmorItem(HGArmorMaterial.TRIBAL, ArmorItem.Type.LEGGINGS, new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(29)).fireResistant()));
+    public static DeferredItem<Item> TRIBAL_WARBOOTS = ITEMS.register("tribal_warboots", () -> new ArmorItem(HGArmorMaterial.TRIBAL, ArmorItem.Type.BOOTS, new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(29)).fireResistant()));
 
     // Thief
 

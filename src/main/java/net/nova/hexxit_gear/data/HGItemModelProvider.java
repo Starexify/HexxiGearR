@@ -24,5 +24,11 @@ public class HGItemModelProvider extends ItemModelProvider {
         basicItem(HGItems.SCALE_CHESTGUARD.get());
         basicItem(HGItems.SCALE_LEGGINGS.get());
         basicItem(HGItems.SCALE_BOOTS.get());
+
+        // Tribal
+        basicItem(HGItems.TRIBAL_SKULL.get());
+        basicItem(HGItems.TRIBAL_TUNIC.get());
+        basicItem(HGItems.TRIBAL_GREAVES.get());
+        basicItem(HGItems.TRIBAL_WARBOOTS.get());
     }
 }
