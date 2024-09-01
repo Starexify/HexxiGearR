@@ -28,7 +28,7 @@ public class HGItemModelProvider extends ItemModelProvider {
         // Tribal
         basicItem(HGItems.TRIBAL_SKULL.get());
         basicItem(HGItems.TRIBAL_TUNIC.get());
-        basicItem(HGItems.TRIBAL_GREAVES.get());
+        basicItem(HGItems.TRIBAL_LEGGINGS.get());
         basicItem(HGItems.TRIBAL_WARBOOTS.get());
 
         // Thief
@@ -36,5 +36,11 @@ public class HGItemModelProvider extends ItemModelProvider {
         basicItem(HGItems.THIEF_TUNIC.get());
         basicItem(HGItems.THIEF_TROUSERS.get());
         basicItem(HGItems.THIEF_TURNSHOES.get());
+
+        // Sage
+        basicItem(HGItems.SAGE_HOOD.get());
+        basicItem(HGItems.SAGE_ROBE.get());
+        basicItem(HGItems.SAGE_PANTS.get());
+        basicItem(HGItems.SAGE_WALKERS.get());
     }
 }

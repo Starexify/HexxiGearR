@@ -50,7 +50,7 @@ public class HGArmorMaterial {
         map.put(ArmorItem.Type.BOOTS, 2);
         map.put(ArmorItem.Type.LEGGINGS, 6);
         map.put(ArmorItem.Type.CHESTPLATE, 7);
-        map.put(ArmorItem.Type.HELMET, 3);
+        map.put(ArmorItem.Type.HELMET, 2);
         map.put(ArmorItem.Type.BODY, 7);
     }), 20, SoundEvents.ARMOR_EQUIP_GENERIC, () -> Ingredient.of(HGItems.HEXICAL_DIAMOND),
             List.of(new ArmorMaterial.Layer(
@@ -58,4 +58,15 @@ public class HGArmorMaterial {
             )), 0F, 0F
     ));
 
+    public static Holder<ArmorMaterial> SAGE = ARMOR_MATERIALS.register("sage", () -> new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
+        map.put(ArmorItem.Type.BOOTS, 2);
+        map.put(ArmorItem.Type.LEGGINGS, 6);
+        map.put(ArmorItem.Type.CHESTPLATE, 7);
+        map.put(ArmorItem.Type.HELMET, 2);
+        map.put(ArmorItem.Type.BODY, 7);
+    }), 22, SoundEvents.ARMOR_EQUIP_GENERIC, () -> Ingredient.of(HGItems.HEXICAL_DIAMOND),
+            List.of(new ArmorMaterial.Layer(
+                    HexxitGearR.rl("sage")
+            )), 0F, 0F
+    ));
 }

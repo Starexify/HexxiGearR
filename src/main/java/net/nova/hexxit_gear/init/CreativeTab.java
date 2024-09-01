@@ -34,7 +34,7 @@ public class CreativeTab {
                 // Tribal
                 output.accept(HGItems.TRIBAL_SKULL);
                 output.accept(HGItems.TRIBAL_TUNIC);
-                output.accept(HGItems.TRIBAL_GREAVES);
+                output.accept(HGItems.TRIBAL_LEGGINGS);
                 output.accept(HGItems.TRIBAL_WARBOOTS);
 
                 // Thief
@@ -42,6 +42,12 @@ public class CreativeTab {
                 output.accept(HGItems.THIEF_TUNIC);
                 output.accept(HGItems.THIEF_TROUSERS);
                 output.accept(HGItems.THIEF_TURNSHOES);
+
+                // Sage
+                output.accept(HGItems.SAGE_HOOD);
+                output.accept(HGItems.SAGE_ROBE);
+                output.accept(HGItems.SAGE_PANTS);
+                output.accept(HGItems.SAGE_WALKERS);
             }).build()
     );
 }
