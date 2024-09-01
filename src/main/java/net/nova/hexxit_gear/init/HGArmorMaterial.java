@@ -20,8 +20,6 @@ import static net.nova.hexxit_gear.HexxitGearR.MODID;
 public class HGArmorMaterial {
     public static final DeferredRegister<ArmorMaterial> ARMOR_MATERIALS = DeferredRegister.create(Registries.ARMOR_MATERIAL, MODID);
 
-    public static final Holder<SoundEvent> ARMOR_EQUIP_BONE_BLOCK = BuiltInRegistries.SOUND_EVENT.wrapAsHolder(SoundEvents.BONE_BLOCK_PLACE);
-
     public static Holder<ArmorMaterial> SCALE = ARMOR_MATERIALS.register("scale", () -> new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
         map.put(ArmorItem.Type.BOOTS, 3);
         map.put(ArmorItem.Type.LEGGINGS, 6);
@@ -40,7 +38,7 @@ public class HGArmorMaterial {
         map.put(ArmorItem.Type.CHESTPLATE, 8);
         map.put(ArmorItem.Type.HELMET, 2);
         map.put(ArmorItem.Type.BODY, 10);
-    }), 18, ARMOR_EQUIP_BONE_BLOCK, () -> Ingredient.of(HGItems.HEXICAL_DIAMOND),
+    }), 18, SoundEvents.ARMOR_EQUIP_IRON, () -> Ingredient.of(HGItems.HEXICAL_DIAMOND),
             List.of(new ArmorMaterial.Layer(
                     HexxitGearR.rl("tribal")
             )), 1F, 0F
