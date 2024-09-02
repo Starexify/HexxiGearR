@@ -41,5 +41,9 @@ public class LangProvider extends LanguageProvider {
 
         // Creative Tab
         add(CreativeTab.HEXXIT_GEAR_TAB_TITLE, "Hexxit Gear R");
+
+        // Mod Menu
+        add("hexxit_gear.modrinth", "Modrinth Link");
+        add("hexxit_gear.curseforge", "CurseForge Link");
     }
 }
