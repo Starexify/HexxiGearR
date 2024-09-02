@@ -1,6 +1,8 @@
-modLoader="javafml" #mandatory
+modLoader="javafml"
 
-loaderVersion="${loader_version_range}" #mandatory
+loaderVersion="${loader_version_range}"
+
+license="${mod_license}"
 
 [[mods]]
 
@@ -19,10 +21,9 @@ logoFile="hexxit_gear_r_logo.png"
 #credits=""
 authors="${mod_authors}"
 description='''${mod_description}'''
-license="${mod_license}"
 
 [modproperties.modmenu]
-links=["hexxit_gear.modrinth=modrinth.com/mod/hexxit_gear_r", "hexxit_gear.curseforge=www.curseforge.com/minecraft/mc-mods/hexxit-gear-r"]
+links=["hexxit_gear.modrinth=modrinth.com/mod/hexxit-gear-r", "hexxit_gear.curseforge=www.curseforge.com/minecraft/mc-mods/hexxit-gear-r"]
 sources="https://github.com/Starexify/HexxiGearR"
 
 [[dependencies.${mod_id}]]
