@@ -30,6 +30,7 @@ public class HGBlocks {
                     .sound(SoundType.GRASS)
                     .offsetType(BlockBehaviour.OffsetType.XZ)
                     .pushReaction(PushReaction.DESTROY)
+                    .lightLevel(light -> 4)
     ));
 
     public static final DeferredBlock<Block> POTTED_HEXBISCUS = registerBlock("potted_hexbiscus", () -> new FlowerPotBlock(HEXBISCUS.get(), BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));

@@ -40,6 +40,8 @@ public class DataGenerators {
 
             generator.addProvider(true, new HGRecipeProvider(output, lookupProvider));
 
+            generator.addProvider(true, new DatapackProvider(output, lookupProvider));
+
         } catch (RuntimeException e) {
             HexxitGearR.logger.error("Cosmicore failed to gather data", e);
         }
