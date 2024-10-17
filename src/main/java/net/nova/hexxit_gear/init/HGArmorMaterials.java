@@ -12,7 +12,7 @@ import static net.nova.hexxit_gear.HexxitGearR.MODID;
 
 public enum HGArmorMaterials implements ArmorMaterial {
     SCALE("scale", 29, new int[]{3, 8, 6, 3}, 15,
-            SoundEvents.ARMOR_EQUIP_DIAMOND, 3.5F, 0.15F, () -> Ingredient.of(HGItems.HEXICAL_DIAMOND.get())),
+            SoundEvents.ARMOR_EQUIP_NETHERITE, 3.5F, 0.15F, () -> Ingredient.of(HGItems.HEXICAL_DIAMOND.get())),
     TRIBAL("tribal", 29, new int[]{3, 8, 6, 2}, 18,
             SoundEvents.ARMOR_EQUIP_IRON, 1.0F, 0.0F, () -> Ingredient.of(HGItems.HEXICAL_DIAMOND.get())),
     THIEF("thief", 29, new int[]{2, 7, 6, 2}, 20,
