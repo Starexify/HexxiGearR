@@ -14,7 +14,7 @@ public enum HGArmorMaterials implements ArmorMaterial {
     SCALE("scale", 29, new int[]{3, 8, 6, 3}, 15,
             SoundEvents.ARMOR_EQUIP_DIAMOND, 3.5F, 0.15F, () -> Ingredient.of(HGItems.HEXICAL_DIAMOND.get())),
     TRIBAL("tribal", 29, new int[]{3, 8, 6, 2}, 18,
-            SoundEvents.BONE_BLOCK_PLACE, 1.0F, 0.0F, () -> Ingredient.of(HGItems.HEXICAL_DIAMOND.get())),
+            SoundEvents.ARMOR_EQUIP_IRON, 1.0F, 0.0F, () -> Ingredient.of(HGItems.HEXICAL_DIAMOND.get())),
     THIEF("thief", 29, new int[]{2, 7, 6, 2}, 20,
             SoundEvents.ARMOR_EQUIP_GENERIC, 0.0F, 0.0F, () -> Ingredient.of(HGItems.HEXICAL_DIAMOND.get())),
     SAGE("sage", 29, new int[]{2, 7, 6, 2}, 22,

@@ -1,5 +1,7 @@
 package net.nova.hexxit_gear.init;
 
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.ArmorItem;
@@ -58,6 +60,11 @@ public class HGItems {
         @Override
         public void initializeClient(Consumer<IClientItemExtensions> consumer) {
             consumer.accept(ISTERProvider.tribalSkull());
+        }
+
+        @Override
+        public SoundEvent getEquipSound() {
+            return SoundEvents.BONE_BLOCK_PLACE;
         }
     });
     public static RegistryObject<Item> TRIBAL_TUNIC = ITEMS.register("tribal_tunic", () -> new TribalArmor(HGArmorMaterials.TRIBAL, ArmorItem.Type.CHESTPLATE, new Item.Properties().fireResistant()));
