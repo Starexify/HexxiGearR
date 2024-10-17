@@ -36,7 +36,7 @@ public class HGItems {
     public static RegistryObject<Item> SCALE_HELMET = ITEMS.register("scale_helmet", () -> new ScaleArmor(HGArmorMaterials.SCALE, ArmorItem.Type.HELMET, new Item.Properties().fireResistant()) {
         @Override
         public @Nullable String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-            return ScaleHelmetModel.TEXTURE.getPath();
+            return ScaleHelmetModel.TEXTURE;
         }
 
         @Override
@@ -52,7 +52,7 @@ public class HGItems {
     public static RegistryObject<Item> TRIBAL_SKULL = ITEMS.register("tribal_skull", () -> new TribalArmor(HGArmorMaterials.TRIBAL, ArmorItem.Type.HELMET, new Item.Properties().fireResistant()) {
         @Override
         public @Nullable String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-            return TribalSkullModel.TEXTURE.getPath();
+            return TribalSkullModel.TEXTURE;
         }
 
         @Override
@@ -68,7 +68,7 @@ public class HGItems {
     public static RegistryObject<Item> THIEF_HOOD = ITEMS.register("thief_hood", () -> new ThiefArmor(HGArmorMaterials.THIEF, ArmorItem.Type.HELMET, new Item.Properties().fireResistant()) {
         @Override
         public @Nullable String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-            return ThiefHoodModel.TEXTURE.getPath();
+            return ThiefHoodModel.TEXTURE;
         }
 
         @Override
@@ -84,7 +84,7 @@ public class HGItems {
     public static RegistryObject<Item> SAGE_HOOD = ITEMS.register("sage_hood", () -> new SageArmor(HGArmorMaterials.SAGE, ArmorItem.Type.HELMET, new Item.Properties().fireResistant()) {
         @Override
         public @Nullable String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-            return SageHoodModel.TEXTURE.getPath();
+            return SageHoodModel.TEXTURE;
         }
 
         @Override
