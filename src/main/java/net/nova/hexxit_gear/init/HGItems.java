@@ -1,6 +1,10 @@
 package net.nova.hexxit_gear.init;
 
+import net.minecraft.core.Holder;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.ArmorItem;
@@ -44,6 +48,11 @@ public class HGItems {
         @Override
         public ResourceLocation getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, ArmorMaterial.Layer layer, boolean innerModel) {
             return TribalSkullModel.TEXTURE;
+        }
+
+        @Override
+        public Holder<SoundEvent> getEquipSound() {
+            return BuiltInRegistries.SOUND_EVENT.getHolder(SoundEvents.BONE_BLOCK_PLACE.getLocation()).orElseThrow();
         }
     });
     public static DeferredItem<Item> TRIBAL_TUNIC = ITEMS.register("tribal_tunic", () -> new TribalArmor(HGArmorMaterial.TRIBAL, ArmorItem.Type.CHESTPLATE, new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(29)).fireResistant()));
